@@ -3,14 +3,271 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YourName</title>
+  <title>Your Name — Website</title>
+  <meta name="description" content="A clean starter website layout." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <main class="wrap">
-    <h1>Hello 👋</h1>
-    <p>Your GitHub Pages site is live.</p>
-    <a class="btn" href="https://github.com/">GitHub</a>
+  <!-- Top bar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark">◼</span>
+        <span class="brand-name">YourName</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#features">Features</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="pill">Available for projects • 2026</p>
+          <h1>Build a clean, modern presence for your work.</h1>
+          <p class="subhead">
+            This is a starter template with a solid layout: hero, sections, cards, and a contact form.
+            Replace text/images later—structure is ready.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#work">See Work</a>
+            <a class="btn" href="#contact">Let’s Talk</a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="stat">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Fast</div>
+              <div class="stat-label">Loading</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Clean</div>
+              <div class="stat-label">Design</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h2 class="hero-card-title">Your Name</h2>
+              <p class="hero-card-subtitle">Industrial Engineering • ML • Optimization</p>
+            </div>
+          </div>
+
+          <div class="hero-card-body">
+            <div class="badge-row">
+              <span class="badge">Python</span>
+              <span class="badge">NumPy</span>
+              <span class="badge">Data</span>
+              <span class="badge">Systems</span>
+            </div>
+
+            <div class="mini-list">
+              <div class="mini-item">
+                <span class="dot"></span>
+                <span>Polished layout & typography</span>
+              </div>
+              <div class="mini-item">
+                <span class="dot"></span>
+                <span>Responsive by default</span>
+              </div>
+              <div class="mini-item">
+                <span class="dot"></span>
+                <span>Easy sections to extend</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card-footer">
+            <a class="btn small" href="#about">Read More</a>
+            <a class="btn small ghost" href="#contact">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>Short paragraph about who you are and what you do.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="panel">
+            <h3>What I do</h3>
+            <p>
+              Write a concise summary: your focus, what you build, what you’re learning, and what you want next.
+              Keep it simple and specific.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Highlights</h3>
+            <ul class="list">
+              <li>✅ Bullet one (e.g., ML specialization / optimization)</li>
+              <li>✅ Bullet two (e.g., projects: regression, RAG, analytics)</li>
+              <li>✅ Bullet three (e.g., tools: Python, Git, Docker)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Portfolio -->
+    <section id="work" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Work</h2>
+          <p>A few “project cards” with placeholders—swap them with real content later.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <h3>Project One</h3>
+              <p class="muted">Regression • Feature Engineering</p>
+            </div>
+            <p>
+              One sentence about the problem + what you built + measurable result (if any).
+            </p>
+            <div class="card-actions">
+              <a class="link" href="#">View details →</a>
+              <span class="tag">2026</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Two</h3>
+              <p class="muted">Optimization • Systems</p>
+            </div>
+            <p>
+              One sentence about the approach (LP, heuristics, simulation, analytics).
+            </p>
+            <div class="card-actions">
+              <a class="link" href="#">View details →</a>
+              <span class="tag">Case Study</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>Project Three</h3>
+              <p class="muted">Data • Visualization</p>
+            </div>
+            <p>
+              Mention data sources, pipeline, dashboard, and key insight.
+            </p>
+            <div class="card-actions">
+              <a class="link" href="#">View details →</a>
+              <span class="tag">Open</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Features</h2>
+          <p>Explain your strengths or what visitors get here.</p>
+        </div>
+
+        <div class="grid three">
+          <div class="panel">
+            <h3>Clean Structure</h3>
+            <p>Sections are modular. Add/remove without breaking layout.</p>
+          </div>
+          <div class="panel">
+            <h3>Modern Styling</h3>
+            <p>Soft shadows, subtle gradients, and consistent spacing.</p>
+          </div>
+          <div class="panel">
+            <h3>Responsive</h3>
+            <p>Looks good on mobile, tablet, and desktop by default.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Simple form layout. You can connect it to a backend later.</p>
+        </div>
+
+        <div class="grid two">
+          <div class="panel">
+            <h3>Let’s build something</h3>
+            <p class="muted">
+              Add your email + socials here. Keep it minimal.
+            </p>
+            <div class="contact-lines">
+              <p><strong>Email:</strong> you@example.com</p>
+              <p><strong>GitHub:</strong> github.com/yourname</p>
+              <p><strong>LinkedIn:</strong> linkedin.com/in/yourname</p>
+            </div>
+          </div>
+
+          <form class="panel form" action="#" method="post">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </label>
+
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="fine muted">This form is UI-only for now.</p>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> YourName. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
