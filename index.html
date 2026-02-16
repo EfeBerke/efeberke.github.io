@@ -3,271 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Website</title>
-  <meta name="description" content="A clean starter website layout." />
+  <title>Efe Berke — Courses</title>
+  <meta name="description" content="Course dashboard" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <!-- Top bar -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">
-        <span class="brand-mark">◼</span>
-        <span class="brand-name">YourName</span>
-      </a>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-text">
+          <h1>Efe Berke</h1>
+          <p class="muted">Spring Term • Course Dashboard</p>
+        </div>
+      </div>
 
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#features">Features</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
+      <div class="topbar-actions">
+        <a class="chip" href="#courses">Courses</a>
+        <a class="chip ghost" href="#note">Note</a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main>
+  <main class="container">
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="pill">Available for projects • 2026</p>
-          <h1>Build a clean, modern presence for your work.</h1>
-          <p class="subhead">
-            This is a starter template with a solid layout: hero, sections, cards, and a contact form.
-            Replace text/images later—structure is ready.
-          </p>
+      <div class="hero-card">
+        <h2>Current Courses</h2>
+        <p class="muted">
+          Clean list view with codes + titles. Add links, syllabi, or weekly plans later.
+        </p>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="#work">See Work</a>
-            <a class="btn" href="#contact">Let’s Talk</a>
+        <div class="meta-row" id="note">
+          <div class="meta">
+            <span class="meta-label">Total</span>
+            <span class="meta-value">7</span>
           </div>
-
-          <div class="hero-meta">
-            <div class="stat">
-              <div class="stat-num">3+</div>
-              <div class="stat-label">Projects</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Fast</div>
-              <div class="stat-label">Loading</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Clean</div>
-              <div class="stat-label">Design</div>
-            </div>
+          <div class="meta">
+            <span class="meta-label">Focus</span>
+            <span class="meta-value">IE + CS</span>
           </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="hero-card-top">
-            <div class="avatar" aria-hidden="true"></div>
-            <div>
-              <h2 class="hero-card-title">Your Name</h2>
-              <p class="hero-card-subtitle">Industrial Engineering • ML • Optimization</p>
-            </div>
-          </div>
-
-          <div class="hero-card-body">
-            <div class="badge-row">
-              <span class="badge">Python</span>
-              <span class="badge">NumPy</span>
-              <span class="badge">Data</span>
-              <span class="badge">Systems</span>
-            </div>
-
-            <div class="mini-list">
-              <div class="mini-item">
-                <span class="dot"></span>
-                <span>Polished layout & typography</span>
-              </div>
-              <div class="mini-item">
-                <span class="dot"></span>
-                <span>Responsive by default</span>
-              </div>
-              <div class="mini-item">
-                <span class="dot"></span>
-                <span>Easy sections to extend</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero-card-footer">
-            <a class="btn small" href="#about">Read More</a>
-            <a class="btn small ghost" href="#contact">Email</a>
+          <div class="meta">
+            <span class="meta-label">Layout</span>
+            <span class="meta-value">Minimal</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p>Short paragraph about who you are and what you do.</p>
-        </div>
+    <section class="section" id="courses">
+      <div class="section-head">
+        <h3>Courses</h3>
+        <p class="muted">Tap/Click a course card later to open notes or resources.</p>
+      </div>
 
-        <div class="grid two">
-          <div class="panel">
-            <h3>What I do</h3>
-            <p>
-              Write a concise summary: your focus, what you build, what you’re learning, and what you want next.
-              Keep it simple and specific.
-            </p>
+      <div class="grid">
+        <article class="card">
+          <div class="card-top">
+            <span class="code">CMPE 142</span>
+            <span class="pill">CS</span>
           </div>
+          <h4>Digital Systems</h4>
+        </article>
 
-          <div class="panel">
-            <h3>Highlights</h3>
-            <ul class="list">
-              <li>✅ Bullet one (e.g., ML specialization / optimization)</li>
-              <li>✅ Bullet two (e.g., projects: regression, RAG, analytics)</li>
-              <li>✅ Bullet three (e.g., tools: Python, Git, Docker)</li>
-            </ul>
+        <article class="card">
+          <div class="card-top">
+            <span class="code">CMPE 230</span>
+            <span class="pill">CS</span>
           </div>
-        </div>
+          <h4>Systems Programming</h4>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="code">CMPE 260</span>
+            <span class="pill">CS</span>
+          </div>
+          <h4>Principles of Programming Languages</h4>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="code">IE 202</span>
+            <span class="pill">IE</span>
+          </div>
+          <h4>Operations Research I</h4>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="code">IE 256</span>
+            <span class="pill">IE</span>
+          </div>
+          <h4>Statistics</h4>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="code">MATH 202</span>
+            <span class="pill">MATH</span>
+          </div>
+          <h4>Differential Equations</h4>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="code">TK 222</span>
+            <span class="pill">GEN</span>
+          </div>
+          <h4>Turkish II</h4>
+        </article>
       </div>
     </section>
 
-    <!-- Work / Portfolio -->
-    <section id="work" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Work</h2>
-          <p>A few “project cards” with placeholders—swap them with real content later.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-top">
-              <h3>Project One</h3>
-              <p class="muted">Regression • Feature Engineering</p>
-            </div>
-            <p>
-              One sentence about the problem + what you built + measurable result (if any).
-            </p>
-            <div class="card-actions">
-              <a class="link" href="#">View details →</a>
-              <span class="tag">2026</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>Project Two</h3>
-              <p class="muted">Optimization • Systems</p>
-            </div>
-            <p>
-              One sentence about the approach (LP, heuristics, simulation, analytics).
-            </p>
-            <div class="card-actions">
-              <a class="link" href="#">View details →</a>
-              <span class="tag">Case Study</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>Project Three</h3>
-              <p class="muted">Data • Visualization</p>
-            </div>
-            <p>
-              Mention data sources, pipeline, dashboard, and key insight.
-            </p>
-            <div class="card-actions">
-              <a class="link" href="#">View details →</a>
-              <span class="tag">Open</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features -->
-    <section id="features" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Features</h2>
-          <p>Explain your strengths or what visitors get here.</p>
-        </div>
-
-        <div class="grid three">
-          <div class="panel">
-            <h3>Clean Structure</h3>
-            <p>Sections are modular. Add/remove without breaking layout.</p>
-          </div>
-          <div class="panel">
-            <h3>Modern Styling</h3>
-            <p>Soft shadows, subtle gradients, and consistent spacing.</p>
-          </div>
-          <div class="panel">
-            <h3>Responsive</h3>
-            <p>Looks good on mobile, tablet, and desktop by default.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p>Simple form layout. You can connect it to a backend later.</p>
-        </div>
-
-        <div class="grid two">
-          <div class="panel">
-            <h3>Let’s build something</h3>
-            <p class="muted">
-              Add your email + socials here. Keep it minimal.
-            </p>
-            <div class="contact-lines">
-              <p><strong>Email:</strong> you@example.com</p>
-              <p><strong>GitHub:</strong> github.com/yourname</p>
-              <p><strong>LinkedIn:</strong> linkedin.com/in/yourname</p>
-            </div>
-          </div>
-
-          <form class="panel form" action="#" method="post">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" required />
-            </label>
-
-            <label>
-              Email
-              <input type="email" name="email" placeholder="you@example.com" required />
-            </label>
-
-            <label>
-              Message
-              <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
-            </label>
-
-            <button class="btn primary" type="submit">Send Message</button>
-            <p class="fine muted">This form is UI-only for now.</p>
-          </form>
-        </div>
-      </div>
-    </section>
+    <footer class="footer">
+      <p class="muted">© <span id="year"></span> efeberke.github.io</p>
+    </footer>
   </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> YourName. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
