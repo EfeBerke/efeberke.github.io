@@ -520,56 +520,6 @@ h1, h2, h3, h4, p {
   aspect-ratio: 0.78;
 }
 
-.course-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.course-card {
-  min-height: 158px;
-  display: grid;
-  align-content: space-between;
-  gap: 12px;
-  padding: 16px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(246, 242, 232, 0.06);
-  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
-}
-
-.course-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(244, 201, 93, 0.42);
-  background: rgba(246, 242, 232, 0.09);
-}
-
-.code {
-  color: var(--yellow);
-  font-size: 0.84rem;
-  font-weight: 950;
-  letter-spacing: 0.04em;
-}
-
-.course-card h3 {
-  font-size: 1rem;
-  line-height: 1.22;
-}
-
-.pill {
-  justify-self: start;
-  padding: 5px 9px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  font-size: 0.72rem;
-  font-weight: 900;
-}
-
-.pill.cs { color: var(--blue); }
-.pill.ie { color: var(--teal); }
-.pill.math { color: var(--yellow); }
-.pill.gen { color: var(--coral); }
-
 .footer {
   border-top: 1px solid var(--line);
   background: #0f0f11;
@@ -604,7 +554,6 @@ h1, h2, h3, h4, p {
   }
 
   .metrics-strip,
-  .course-grid,
   .insight-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -643,7 +592,6 @@ h1, h2, h3, h4, p {
   }
 
   .metrics-strip,
-  .course-grid,
   .insight-grid {
     grid-template-columns: 1fr;
   }
