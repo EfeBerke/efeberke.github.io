@@ -3,161 +3,427 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toon Blast vs Royal Match — Game Analysis</title>
-  <meta name="description" content="Interactive mobile game analysis comparing Toon Blast and Royal Match." />
+  <title>Toon Blast vs Royal Match - Early Game Analysis</title>
+  <meta name="description" content="A product-focused early game analysis comparing Toon Blast and Royal Match." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="#home" aria-label="Efe Berke home">
-        <span class="logo" aria-hidden="true">EB</span>
-        <span class="brand-text">
-          <strong>Efe Berke</strong>
-          <span>Mobile game analysis</span>
-        </span>
-      </a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="brand-mark">EB</span>
+      <span>
+        <strong>Dream Games Case Study</strong>
+        <small>Toon Blast vs Royal Match</small>
+      </span>
+    </a>
 
-      <nav class="topbar-actions" aria-label="Primary navigation">
-        <a class="chip" href="#case-study">Case Study</a>
-        <a class="chip" href="#document">PDF</a>
-        <a class="chip ghost" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer">Open PDF</a>
-      </nav>
-    </div>
+    <nav class="nav" aria-label="Page navigation">
+      <a href="#verdict">Verdict</a>
+      <a href="#matrix">Matrix</a>
+      <a href="#deep-dive">Deep Dive</a>
+      <a href="#recommendations">Recommendations</a>
+    </nav>
   </header>
 
-  <main id="home">
+  <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Mobile games case study</p>
-          <h1>Toon Blast vs Royal Match: product, design, and player experience analysis.</h1>
-          <p class="hero-lede">
-            A web version of my Dream Games case work, shaped as an interactive portfolio piece with the original PDF attached for the full deep dive.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#case-study">Explore Analysis</a>
-            <a class="button secondary" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer">View Full PDF</a>
-          </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Early game product analysis</p>
+        <h1>Toon Blast vs Royal Match</h1>
+        <p class="hero-text">
+          A 40-level comparison of mechanics, level design, difficulty, graphics, UI, mini-games, and player feedback.
+        </p>
+        <div class="hero-meta" aria-label="Report metadata">
+          <span>Prepared by Efe Berke Vatansever</span>
+          <span>April 8, 2026</span>
+          <span>Dream Games internship case study</span>
         </div>
+      </div>
 
-        <div class="project-preview" aria-label="Dream Games case study preview">
-          <img src="assets/dream-games-case-preview.png" alt="Preview of Toon Blast and Royal Match comparison case study PDF" />
+      <div class="hero-visual" aria-label="Toon Blast and Royal Match characters">
+        <img class="game-icon toon-icon" src="assets/extracted/pdf-image-01.jpg" alt="Toon Blast character" />
+        <img class="game-icon royal-icon" src="assets/extracted/flate-image-5.png" alt="Royal Match king character" />
+        <div class="score-orbit">
+          <span>Winner</span>
+          <strong>Royal Match</strong>
         </div>
       </div>
     </section>
 
-    <section class="section intro-band">
-      <div class="container metrics-strip" aria-label="Project summary">
-        <div class="metric">
-          <span class="metric-label">Project</span>
-          <strong>Dream Games Case</strong>
+    <section class="scoreboard" id="verdict" aria-label="Overall verdict">
+      <article class="score-card toon">
+        <span class="game-label">Toon Blast</span>
+        <strong>7.8</strong>
+        <p>More intuitive core mechanic, smooth onboarding, strong mini-game pacing, but weaker difficulty balance.</p>
+      </article>
+      <article class="score-card royal">
+        <span class="game-label">Royal Match</span>
+        <strong>8.7</strong>
+        <p>Stronger overall due to premium visuals, clearer difficulty curve, broader appeal, and added strategic depth.</p>
+      </article>
+      <article class="score-card insight">
+        <span class="game-label">Main conclusion</span>
+        <strong>RM leads</strong>
+        <p>Royal Match performs more strongly overall and is the game I would continue playing after the early-game analysis.</p>
+      </article>
+    </section>
+
+    <section class="section executive">
+      <div class="section-heading">
+        <p class="eyebrow">Executive summary</p>
+        <h2>Royal Match has a comparative advantage in almost every category.</h2>
+      </div>
+      <div class="prose-columns">
+        <p>
+          I analyzed the first 40 levels of Toon Blast and Royal Match in terms of game mechanics, level design,
+          level difficulty, graphics, and user interface. I first examined each game separately, then compared
+          them category by category.
+        </p>
+        <p>
+          The analysis shows that Royal Match has a comparative advantage in almost every category, including
+          areas where Toon Blast is especially strong, such as its intuitive tap-to-blast mechanic and generally
+          frictionless onboarding structure.
+        </p>
+        <p>
+          Royal Match's graphics and added layer of strategic thinking make it more appealing to a wider audience.
+          Overall, Royal Match stands out as the stronger game.
+        </p>
+      </div>
+    </section>
+
+    <section class="section matrix-section" id="matrix">
+      <div class="section-heading">
+        <p class="eyebrow">Comparison matrix</p>
+        <h2>Category scores and takeaways</h2>
+      </div>
+
+      <div class="matrix">
+        <div class="matrix-row matrix-head">
+          <span>Category</span>
+          <span>Toon Blast</span>
+          <span>Royal Match</span>
+          <span>Comparative takeaway</span>
         </div>
-        <div class="metric">
-          <span class="metric-label">Games</span>
-          <strong>Toon Blast + Royal Match</strong>
+        <div class="matrix-row">
+          <span>Game mechanics - 25%</span>
+          <span>More intuitive and straightforward - 8.5</span>
+          <span>More traditional and strategic - 9</span>
+          <span>Royal Match is slightly better overall, while Toon Blast stands out in core mechanic intuitiveness.</span>
         </div>
-        <div class="metric">
-          <span class="metric-label">Focus</span>
-          <strong>UX, economy, live ops</strong>
+        <div class="matrix-row">
+          <span>Level design - 20%</span>
+          <span>Intentional streak breaker and annoying 3-star scoring system - 7</span>
+          <span>Mix of randomness and planning - 8</span>
+          <span>Royal Match offers smoother level design through more evenly distributed luck and stronger intentional structuring.</span>
         </div>
-        <div class="metric">
-          <span class="metric-label">Format</span>
-          <strong>Interactive + PDF</strong>
+        <div class="matrix-row">
+          <span>Level difficulty - 15%</span>
+          <span>Uneven distribution of easy levels - 6.5</span>
+          <span>Structured difficulty curve - 9.5</span>
+          <span>Royal Match's sequence-by-sequence design after level 20 gives it a clearer strategic advantage.</span>
+        </div>
+        <div class="matrix-row">
+          <span>Graphics - 25%</span>
+          <span>Toy-like visual style - 8</span>
+          <span>Connected and premium game-world design - 9</span>
+          <span>Royal Match appeals to a broader audience, while Toon Blast feels more child-oriented.</span>
+        </div>
+        <div class="matrix-row">
+          <span>User interface - 10%</span>
+          <span>Simple but less harmony - 8</span>
+          <span>Basic and connected design - 8.5</span>
+          <span>Both are low-friction, but Royal Match has stronger visual harmony.</span>
+        </div>
+        <div class="matrix-row">
+          <span>Mini-game structure - 5%</span>
+          <span>Relaxing and well-designed - 9.5</span>
+          <span>Unnecessarily long for a relaxation mini-game - 6.5</span>
+          <span>Rescue Bruno creates momentum; Knight's Nightmare adds friction without normal level progression.</span>
         </div>
       </div>
     </section>
 
-    <section class="section" id="case-study">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Featured project</p>
-            <h2>Game Comparison Lab</h2>
-          </div>
-          <p class="section-note">Switch focus areas to see how the two games differ across design and business lenses.</p>
-        </div>
-
-        <div class="lab-layout">
-          <aside class="lens-panel" aria-label="Analysis lenses">
-            <button class="lens is-active" type="button" data-lens="core">
-              <span>Core loop</span>
-              <small>Session rhythm and repeat play</small>
-            </button>
-            <button class="lens" type="button" data-lens="level">
-              <span>Level design</span>
-              <small>Challenge, readability, flow</small>
-            </button>
-            <button class="lens" type="button" data-lens="meta">
-              <span>Meta systems</span>
-              <small>Events, progression, rewards</small>
-            </button>
-            <button class="lens" type="button" data-lens="market">
-              <span>Market fit</span>
-              <small>Positioning and retention cues</small>
-            </button>
-          </aside>
-
-          <div class="comparison-panel">
-            <div class="comparison-head">
-              <div>
-                <p class="eyebrow" id="lensKicker">Core loop</p>
-                <h3 id="lensTitle">Fast puzzle loop with different emotional framing.</h3>
-              </div>
-              <div class="segmented" role="tablist" aria-label="Game selector">
-                <button class="segment is-active" type="button" data-game="toon" role="tab" aria-selected="true">Toon Blast</button>
-                <button class="segment" type="button" data-game="royal" role="tab" aria-selected="false">Royal Match</button>
-              </div>
-            </div>
-
-            <div class="game-card" id="gameCard">
-              <div class="game-heading">
-                <span class="game-badge toon" id="gameInitial">TB</span>
-                <div>
-                  <h4 id="gameName">Toon Blast</h4>
-                  <p id="gameSummary">A character-led puzzle experience where quick readable boards and playful feedback keep the loop light.</p>
-                </div>
-              </div>
-              <div class="score-list" id="scoreList" aria-label="Comparison scores"></div>
-            </div>
-
-            <div class="insight-grid">
-              <article class="insight">
-                <span class="insight-label">Observation</span>
-                <p id="lensObservation">Both titles keep the core action simple, but they package motivation differently: Toon Blast leans on toy-like immediacy while Royal Match leans on a clearer renovation fantasy.</p>
-              </article>
-              <article class="insight">
-                <span class="insight-label">Strategic takeaway</span>
-                <p>Small differences in framing, reward clarity, and progression can change how similar puzzle mechanics feel over many sessions.</p>
-              </article>
-            </div>
-          </div>
-        </div>
+    <section class="section gallery-section" aria-label="Evidence images">
+      <div class="section-heading">
+        <p class="eyebrow">Extracted visual evidence</p>
+        <h2>Screenshots and curves from the report</h2>
+      </div>
+      <div class="gallery">
+        <figure>
+          <img src="assets/extracted/pdf-image-02.jpg" alt="Toon Blast gameplay board" />
+          <figcaption>Toon Blast gameplay: clear goals, boosters, and a compact board.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/extracted/flate-image-46.png" alt="Royal Match gameplay board" />
+          <figcaption>Royal Match gameplay: richer board presentation and stronger world integration.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/extracted/pdf-image-03.jpg" alt="Toon Blast Rescue Bruno mini-game" />
+          <figcaption>Rescue Bruno creates a low-friction break from the main loop.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/extracted/pdf-image-04.jpg" alt="Toon Blast level result screen" />
+          <figcaption>The 3-star result structure can create an unsatisfying feeling when replay is not available.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="section document-section" id="document">
-      <div class="container document-layout">
-        <div>
-          <p class="eyebrow">Original work</p>
-          <h2>Full analysis PDF</h2>
-          <p class="section-note">
-            The complete case document remains available as a PDF, while this page gives recruiters and collaborators a quick interactive read.
-          </p>
-          <a class="button primary" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer">Open Dream Games Case</a>
-        </div>
-        <a class="pdf-tile" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer" aria-label="Open the Dream Games case study PDF">
-          <img src="assets/dream-games-case-preview.png" alt="First page preview of the Dream Games case study" />
-        </a>
+    <section class="section" id="deep-dive">
+      <div class="section-heading">
+        <p class="eyebrow">Deep dive</p>
+        <h2>Full extracted analysis</h2>
       </div>
+
+      <div class="tabs" role="tablist" aria-label="Deep dive sections">
+        <button class="tab is-active" type="button" data-panel="toon">Toon Blast</button>
+        <button class="tab" type="button" data-panel="royal">Royal Match</button>
+        <button class="tab" type="button" data-panel="compare">Comparative Analysis</button>
+        <button class="tab" type="button" data-panel="data">Player Data</button>
+      </div>
+
+      <article class="panel is-active" id="panel-toon">
+        <div class="report-grid">
+          <div class="report-card">
+            <h3>General impression</h3>
+            <p>
+              Toon Blast is enjoyable through the first 40 levels because it introduces new obstacles, boosters,
+              and different board structures that prevent the experience from becoming boring. The tap-to-blast
+              mechanic is visually intuitive, easy to understand, and explained effectively through tutorials.
+            </p>
+            <p>
+              The first 40 levels include a few spikes and some medium-difficulty levels, but most are quite easy.
+              The main strength is the intuitiveness of the core mechanic; the main weakness is the uneven
+              distribution of easy levels.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Game mechanics</h3>
+            <p>
+              Toon Blast focuses on grouping blocks and blasting them through tapping. The first 40 levels introduce
+              5 new obstacles and 5 new boosters, all explained clearly. Obstacles improve gameplay because each one
+              has its own clearing requirements, encouraging more strategic moves.
+            </p>
+            <p>
+              Traditional booster combinations are satisfying, but disco ball combinations appear too frequently.
+              Combining two disco balls can clear almost the entire board, and this happened in roughly 12 to 13 of
+              the first 40 levels, reducing challenge and weakening balance.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Level design</h3>
+            <p>
+              Board shapes and obstacle distributions change continuously, maintaining visual and gameplay variety.
+              New obstacle levels are usually easier, which reduces friction and supports the feeling of wanting to
+              play one more level.
+            </p>
+            <p>
+              Rescue Bruno appears approximately every seven levels. These mini-game levels are relatively easy,
+              but they provide a pleasant break from the main tap-to-blast loop and make the first 40 levels feel
+              more dynamic.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Difficulty, graphics, and UI</h3>
+            <p>
+              The first failure occurs at level 18, which feels like an intentional streak breaker because the board
+              offers limited opportunities to create larger combinations. Other spikes appear at levels 25, 29, and
+              30, but hard levels are usually followed by easier ones.
+            </p>
+            <p>
+              The toy-like animal characters create a cute, friendly atmosphere. The UI is simple and clear, but
+              post-level animations can feel boring, and the 3-star system can reduce closure because players cannot
+              replay completed levels just to improve a lower star result.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel" id="panel-royal">
+        <div class="report-grid">
+          <div class="report-card">
+            <h3>General impression</h3>
+            <p>
+              Royal Match is a traditional match-3 puzzle game with strongly integrated game-world visuals and
+              mechanics. It feels premium in nearly every aspect. The teaching phase is longer than usual, making
+              onboarding more comfortable and controlled.
+            </p>
+            <p>
+              New obstacles and boosters are explained clearly, and the challenge is distributed more evenly overall.
+              The most striking quality of the early experience is its premium polish across gameplay and UI.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Game mechanics</h3>
+            <p>
+              Royal Match builds strategic value through move sequencing. After around level 20, the game teaches
+              players that choosing the first move carefully matters because each move can significantly affect the
+              next board state.
+            </p>
+            <p>
+              Like Toon Blast, it introduces 5 boosters and 5 obstacles in the first 40 levels. However, combinations
+              often require more judgment, since the player must decide which combination is most effective in a
+              specific board situation.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Level design</h3>
+            <p>
+              Royal Match rarely feels repetitive. From level 1 to around level 21, it introduces a new obstacle or
+              booster almost every two to three levels. After level 21, variety comes more from board structures,
+              obstacle arrangements, and rising complexity.
+            </p>
+            <p>
+              Bonus levels at levels 20 and 40 are not meant to test the player. They provide a coin-earning break
+              after harder stages and help reduce tension.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Difficulty, graphics, and UI</h3>
+            <p>
+              Difficulty is stable and very easy through the first 10 levels, then increases gradually. First failure
+              occurs at level 24. Harder levels are usually followed by a sequence of easy levels, restoring momentum
+              more effectively than Toon Blast.
+            </p>
+            <p>
+              Royal Match has a richer visual identity because progress is connected to rooms, areas, and the knight's
+              world. The UI is clear, polished, and natural, and combination reminders reinforce mechanics without
+              interrupting flow.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel" id="panel-compare">
+        <div class="report-grid">
+          <div class="report-card wide">
+            <h3>Game mechanics comparison</h3>
+            <p>
+              From my perspective, Toon Blast's tap-to-blast mechanic is more intuitive and enjoyable than the
+              traditional match-3 system. However, Royal Match's additional layer of strategic thinking lets it
+              outperform Toon Blast in the mechanics section.
+            </p>
+            <div class="mini-table">
+              <span></span><strong>Understandability</strong><strong>Entertainment</strong>
+              <strong>Toon Blast</strong><span>9.8</span><span>7.7</span>
+              <strong>Royal Match</strong><span>9.8</span><span>8.9</span>
+            </div>
+          </div>
+          <div class="report-card">
+            <h3>Level design comparison</h3>
+            <p>
+              Remaining moves are highly correlated with difficulty. Royal Match's stronger competitive feel comes
+              partly from its more controlled distribution of remaining moves. Compared with Toon Blast, it contains
+              fewer very easy levels.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Mini-games and bonus levels</h3>
+            <p>
+              Toon Blast's mini-games are well-designed and appear approximately every seven levels. Royal Match's
+              bonus levels also reduce tension and reward the player, but Knight's Nightmare is longer and still
+              relies on the same puzzle structure, which creates more friction.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>Graphics comparison</h3>
+            <p>
+              Royal Match's premium visual style appeals to a broader audience. Toon Blast's graphics feel more
+              child-oriented and likely more attractive to younger players. Royal Match feels more detailed,
+              integrated, and accessible across age groups.
+            </p>
+          </div>
+          <div class="report-card">
+            <h3>User interface comparison</h3>
+            <p>
+              Both games have clear, low-friction interfaces. The difference is visual harmony: Royal Match connects
+              UI elements to the overall game world, while Toon Blast feels more purely functional.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel" id="panel-data">
+        <div class="data-layout">
+          <div class="report-card">
+            <h3>Difficulty distribution</h3>
+            <div class="mini-table five">
+              <span></span><strong>Easy</strong><strong>Medium</strong><strong>Hard</strong><strong>Bonus</strong><strong>Mini-game</strong>
+              <strong>Toon Blast</strong><span>31</span><span>5</span><span>4</span><span>0</span><span>5</span>
+              <strong>Royal Match</strong><span>25</span><span>10</span><span>3</span><span>2</span><span>3</span>
+            </div>
+          </div>
+          <div class="report-card">
+            <h3>Failure and playtime</h3>
+            <div class="mini-table">
+              <span></span><strong>First fail</strong><strong>Total fail</strong><strong>Avg play time</strong>
+              <strong>Toon Blast</strong><span>18</span><span>5</span><span>31.8s</span>
+              <strong>Royal Match</strong><span>24</span><span>7</span><span>45.4s</span>
+            </div>
+          </div>
+          <div class="report-card wide">
+            <h3>Supplementary player feedback</h3>
+            <p>
+              Because my own gameplay behavior may not fully represent a broader player base, I gathered input from
+              5 people with different backgrounds in age, gender, and gaming experience. The sample is directional,
+              not statistical proof.
+            </p>
+            <div class="mini-table five">
+              <span></span><strong>Mechanics</strong><strong>Variety</strong><strong>Difficulty</strong><strong>Visual</strong><strong>UI</strong>
+              <strong>Toon Blast</strong><span>8.8</span><span>8.4</span><span>7.0</span><span>8.0</span><span>8.4</span>
+              <strong>Royal Match</strong><span>9.4</span><span>9.0</span><span>9.2</span><span>9.6</span><span>9.2</span>
+            </div>
+            <p>
+              Participants generally preferred Royal Match's mechanics, visuals, and UI. Toon Blast's tap-to-blast
+              mechanic is highly intuitive, but can make the game feel too easy and therefore less entertaining.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section recommendations" id="recommendations">
+      <div class="section-heading">
+        <p class="eyebrow">Key product takeaways</p>
+        <h2>Recommendations from the report</h2>
+      </div>
+      <div class="recommendation-grid">
+        <article>
+          <h3>For Toon Blast</h3>
+          <ul>
+            <li>Adjust combo distribution to improve the difficulty curve.</li>
+            <li>Increase the number of blocks required to create a disco ball to reduce overpowered full-board clears.</li>
+            <li>Test whether unsolvable spike levels affect a large portion of users, then rebalance those levels if needed.</li>
+            <li>Replace the 3-star structure with a score bar to avoid the negative feeling of empty stars after completion.</li>
+            <li>Improve larger-screen compatibility, especially because the game may appeal strongly to children.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>For Royal Match</h3>
+          <ul>
+            <li>Lower the difficulty of Knight's Nightmare to improve the onboarding experience.</li>
+            <li>Remove unnecessary pieces from the mini-game structure and guide the player more clearly toward the pipeline path.</li>
+            <li>Reduce board size so the two-step structure feels less time-consuming.</li>
+            <li>Validate changes through A/B tests with early-stage players before implementation.</li>
+            <li>Apply changes only if continuation rates show clear improvement.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">Final conclusion</p>
+      <h2>Royal Match is the clear winner overall.</h2>
+      <p>
+        Toon Blast has a highly enjoyable and easy-to-learn tap-to-blast mechanic, and its mini-game micropuzzles
+        strengthen onboarding. However, Royal Match has a stronger difficulty curve, broader visual and UI appeal,
+        and a strategic layer that makes it more preferable after the first 40 levels.
+      </p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> efeberke.github.io</p>
-      <a href="#home">Back to top</a>
-    </div>
+    <span>Extracted and adapted from Efe Berke Vatansever's Dream Games case study.</span>
+    <a href="#top">Back to top</a>
   </footer>
 
   <script src="script.js" defer></script>
