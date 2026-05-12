@@ -3,125 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Efe Berke — Courses</title>
-  <meta name="description" content="Course dashboard" />
+  <title>Efe Berke — Projects & Courses</title>
+  <meta name="description" content="Efe Berke Vatansever's project portfolio, course dashboard, and mobile game analysis work." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
-    <div class="container">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
-        <div class="brand-text">
-          <h1>Efe Berke</h1>
-          <p class="muted">Spring Term • Course Dashboard</p>
-        </div>
-      </div>
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Efe Berke home">
+        <span class="logo" aria-hidden="true">EB</span>
+        <span class="brand-text">
+          <strong>Efe Berke</strong>
+          <span>Projects, courses, analysis</span>
+        </span>
+      </a>
 
-      <div class="topbar-actions">
+      <nav class="topbar-actions" aria-label="Primary navigation">
+        <a class="chip" href="#case-study">Case Study</a>
         <a class="chip" href="#courses">Courses</a>
-        <a class="chip ghost" href="#note">Note</a>
-      </div>
+        <a class="chip ghost" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main id="home">
     <section class="hero">
-      <div class="hero-card">
-        <h2>Current Courses</h2>
-        <p class="muted">
-          Clean list view with codes + titles. Add links, syllabi, or weekly plans later.
-        </p>
-
-        <div class="meta-row" id="note">
-          <div class="meta">
-            <span class="meta-label">Total</span>
-            <span class="meta-value">7</span>
-          </div>
-          <div class="meta">
-            <span class="meta-label">Focus</span>
-            <span class="meta-value">IE + CS</span>
-          </div>
-          <div class="meta">
-            <span class="meta-label">Layout</span>
-            <span class="meta-value">Minimal</span>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mobile games case study</p>
+          <h1>Toon Blast vs Royal Match: product, design, and player experience analysis.</h1>
+          <p class="hero-lede">
+            A web version of my Dream Games case work, shaped as an interactive portfolio piece with the original PDF attached for the full deep dive.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#case-study">Explore Analysis</a>
+            <a class="button secondary" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer">View Full PDF</a>
           </div>
         </div>
+
+        <div class="project-preview" aria-label="Dream Games case study preview">
+          <img src="assets/dream-games-case-preview.png" alt="Preview of Toon Blast and Royal Match comparison case study PDF" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-band">
+      <div class="container metrics-strip" aria-label="Project summary">
+        <div class="metric">
+          <span class="metric-label">Project</span>
+          <strong>Dream Games Case</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Games</span>
+          <strong>Toon Blast + Royal Match</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Focus</span>
+          <strong>UX, economy, live ops</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Format</span>
+          <strong>Interactive + PDF</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="case-study">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Featured project</p>
+            <h2>Game Comparison Lab</h2>
+          </div>
+          <p class="section-note">Switch focus areas to see how the two games differ across design and business lenses.</p>
+        </div>
+
+        <div class="lab-layout">
+          <aside class="lens-panel" aria-label="Analysis lenses">
+            <button class="lens is-active" type="button" data-lens="core">
+              <span>Core loop</span>
+              <small>Session rhythm and repeat play</small>
+            </button>
+            <button class="lens" type="button" data-lens="level">
+              <span>Level design</span>
+              <small>Challenge, readability, flow</small>
+            </button>
+            <button class="lens" type="button" data-lens="meta">
+              <span>Meta systems</span>
+              <small>Events, progression, rewards</small>
+            </button>
+            <button class="lens" type="button" data-lens="market">
+              <span>Market fit</span>
+              <small>Positioning and retention cues</small>
+            </button>
+          </aside>
+
+          <div class="comparison-panel">
+            <div class="comparison-head">
+              <div>
+                <p class="eyebrow" id="lensKicker">Core loop</p>
+                <h3 id="lensTitle">Fast puzzle loop with different emotional framing.</h3>
+              </div>
+              <div class="segmented" role="tablist" aria-label="Game selector">
+                <button class="segment is-active" type="button" data-game="toon" role="tab" aria-selected="true">Toon Blast</button>
+                <button class="segment" type="button" data-game="royal" role="tab" aria-selected="false">Royal Match</button>
+              </div>
+            </div>
+
+            <div class="game-card" id="gameCard">
+              <div class="game-heading">
+                <span class="game-badge toon" id="gameInitial">TB</span>
+                <div>
+                  <h4 id="gameName">Toon Blast</h4>
+                  <p id="gameSummary">A character-led puzzle experience where quick readable boards and playful feedback keep the loop light.</p>
+                </div>
+              </div>
+              <div class="score-list" id="scoreList" aria-label="Comparison scores"></div>
+            </div>
+
+            <div class="insight-grid">
+              <article class="insight">
+                <span class="insight-label">Observation</span>
+                <p id="lensObservation">Both titles keep the core action simple, but they package motivation differently: Toon Blast leans on toy-like immediacy while Royal Match leans on a clearer renovation fantasy.</p>
+              </article>
+              <article class="insight">
+                <span class="insight-label">Portfolio angle</span>
+                <p>Shows product thinking across game UX, feature hierarchy, retention loops, and competitive comparison.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section document-section" id="document">
+      <div class="container document-layout">
+        <div>
+          <p class="eyebrow">Original work</p>
+          <h2>Full analysis PDF</h2>
+          <p class="section-note">
+            The complete case document remains available as a PDF, while this page gives recruiters and collaborators a quick interactive read.
+          </p>
+          <a class="button primary" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer">Open Dream Games Case</a>
+        </div>
+        <a class="pdf-tile" href="assets/dream-games-case-efe-berke-vatansever.pdf" target="_blank" rel="noreferrer" aria-label="Open the Dream Games case study PDF">
+          <img src="assets/dream-games-case-preview.png" alt="First page preview of the Dream Games case study" />
+        </a>
       </div>
     </section>
 
     <section class="section" id="courses">
-      <div class="section-head">
-        <h3>Courses</h3>
-        <p class="muted">Tap/Click a course card later to open notes or resources.</p>
-      </div>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Current term</p>
+            <h2>Courses</h2>
+          </div>
+          <p class="section-note">A quick academic snapshot beside the portfolio work.</p>
+        </div>
 
-      <div class="grid">
-        <article class="card">
-          <div class="card-top">
+        <div class="course-grid">
+          <article class="course-card">
             <span class="code">CMPE 142</span>
-            <span class="pill">CS</span>
-          </div>
-          <h4>Digital Systems</h4>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
+            <h3>Digital Systems</h3>
+            <span class="pill cs">CS</span>
+          </article>
+          <article class="course-card">
             <span class="code">CMPE 230</span>
-            <span class="pill">CS</span>
-          </div>
-          <h4>Systems Programming</h4>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
+            <h3>Systems Programming</h3>
+            <span class="pill cs">CS</span>
+          </article>
+          <article class="course-card">
             <span class="code">CMPE 260</span>
-            <span class="pill">CS</span>
-          </div>
-          <h4>Principles of Programming Languages</h4>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
+            <h3>Principles of Programming Languages</h3>
+            <span class="pill cs">CS</span>
+          </article>
+          <article class="course-card">
             <span class="code">IE 202</span>
-            <span class="pill">IE</span>
-          </div>
-          <h4>Operations Research I</h4>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
+            <h3>Operations Research I</h3>
+            <span class="pill ie">IE</span>
+          </article>
+          <article class="course-card">
             <span class="code">IE 256</span>
-            <span class="pill">IE</span>
-          </div>
-          <h4>Statistics</h4>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
+            <h3>Statistics</h3>
+            <span class="pill ie">IE</span>
+          </article>
+          <article class="course-card">
             <span class="code">MATH 202</span>
-            <span class="pill">MATH</span>
-          </div>
-          <h4>Differential Equations</h4>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
+            <h3>Differential Equations</h3>
+            <span class="pill math">MATH</span>
+          </article>
+          <article class="course-card">
             <span class="code">TK 222</span>
-            <span class="pill">GEN</span>
-          </div>
-          <h4>Turkish II</h4>
-        </article>
+            <h3>Turkish II</h3>
+            <span class="pill gen">GEN</span>
+          </article>
+        </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <p class="muted">© <span id="year"></span> efeberke.github.io</p>
-    </footer>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> efeberke.github.io</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
