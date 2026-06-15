@@ -17,12 +17,15 @@ body {
 }
 
 .info-card {
-  width: min(420px, calc(100% - 32px));
-  padding: 22px;
+  display: grid;
+  grid-template-columns: 1fr 112px;
+  gap: 18px;
+  align-items: center;
+  width: min(560px, calc(100% - 32px));
+  padding: 18px;
   border: 1px solid #ff7a1a;
   border-radius: 8px;
   background: #111;
-  text-align: center;
 }
 
 h1 {
@@ -36,4 +39,25 @@ p {
   margin: 8px 0 0;
   color: #d8c7ba;
   line-height: 1.45;
+}
+
+.profile-photo {
+  width: 112px;
+  height: 112px;
+  border: 1px solid #ff7a1a;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  background: #050505;
+}
+
+@media (max-width: 520px) {
+  .info-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile-photo {
+    justify-self: center;
+  }
 }
