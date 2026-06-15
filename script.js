@@ -1,25 +1,30 @@
 window.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll("[data-panel]");
-  const panels = {
-    toon: document.getElementById("panel-toon"),
-    royal: document.getElementById("panel-royal"),
-    compare: document.getElementById("panel-compare"),
-    data: document.getElementById("panel-data")
-  };
+  const links = Array.from(document.querySelectorAll(".nav a"));
+  const sections = links
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
 
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const target = tab.dataset.panel;
+  if (!sections.length || !("IntersectionObserver" in window)) {
+    return;
+  }
 
-      tabs.forEach((item) => {
-        item.classList.toggle("is-active", item === tab);
-      });
-
-      Object.entries(panels).forEach(([key, panel]) => {
-        if (panel) {
-          panel.classList.toggle("is-active", key === target);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
         }
+
+        links.forEach((link) => {
+          link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+        });
       });
-    });
-  });
+    },
+    {
+      rootMargin: "-35% 0px -55% 0px",
+      threshold: 0
+    }
+  );
+
+  sections.forEach((section) => observer.observe(section));
 });
