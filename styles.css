@@ -11,58 +11,29 @@ body {
 }
 
 .page {
-  width: min(420px, calc(100% - 32px));
-  padding: 48px 0;
-  margin-left: clamp(16px, 6vw, 72px);
+  display: flex;
+  justify-content: center;
+  padding-top: 48px;
 }
 
-.info-card,
-.case-card {
+.info-card {
+  width: min(420px, calc(100% - 32px));
   padding: 22px;
   border: 1px solid #ff7a1a;
   border-radius: 8px;
   background: #111;
-}
-
-.case-card {
-  margin-top: 18px;
-}
-
-.label {
-  margin: 0 0 10px;
-  color: #ff9a3c;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-h1,
-h2,
-p {
-  margin: 0;
+  text-align: center;
 }
 
 h1 {
-  font-size: 30px;
+  margin: 0 0 12px;
+  color: #ff7a1a;
+  font-size: 28px;
   line-height: 1.1;
 }
 
-h2 {
-  font-size: 24px;
-  line-height: 1.15;
-}
-
-.info-card p:last-child,
-.case-card p {
-  margin-top: 10px;
+p {
+  margin: 8px 0 0;
   color: #d8c7ba;
-  line-height: 1.5;
-}
-
-a {
-  display: inline-block;
-  margin-top: 16px;
-  color: #ff7a1a;
-  font-weight: 700;
+  line-height: 1.45;
 }
